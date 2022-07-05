@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+
+        <input type="text" onkeyup="validate(event)" onclick="HandleClick(event)">
+    </div>
+
+</body>
+<script>
+
+    function HandleClick(event){
+        console.log(event)
+    }
+
+    // function validate(event){
+    //     console.log(event.target.value);
+    //     if(event.target.value != " "){
+    //         event.target.style.backgroundColor = "green"
+    //     }
+    // }
+    const validate = (event) => {
+
+        console.log(event.target.value);
+        // if (event.target.value != " ") {
+        //     event.target.style.backgroundColor = "green"
+        // } else {
+        //     event.target.style.backgroundColor = "red"
+        // }
+
+        const result = event.target.value.trim();
+        event.target.style.backgroundColor = result !="" ? "green" : "red" ;
+        event.target.style.color = result !=""? "wight" : "black" ;
+    }
+</script>
+
+</html>

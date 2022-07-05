@@ -1,0 +1,48 @@
+{
+  "orders": [
+    {
+      "item": "redmi",
+      "price": 123,
+      "id": 1
+    },
+    {
+      "item": "redmi",
+      "price": 123,
+      "id": 8
+    },
+    {
+      "category": "2",
+      "id": 17
+    },
+    {
+      "item": "laptop",
+      "price": "1000",
+      "id": 20
+    },
+    {
+      "item": "laptop",
+      "price": "1000",
+      "id": 21
+    },
+    {
+      "category": "2",
+      "id": 22
+    },
+    {
+      "item": "laptop",
+      "price": "1000",
+      "OrderDate": "2022-07-07",
+      "id": 23
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "label": "toys"
+    },
+    {
+      "id": 2,
+      "label": "apparel"
+    }
+  ]
+}
