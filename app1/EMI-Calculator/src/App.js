@@ -1,11 +1,10 @@
-
-import OrderForm from './orderform';
-
+//import './App.css';
+import EmiCalculator from "./EMI-Calculator";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <OrderForm name='Ramesh'></OrderForm>
+      <EmiCalculator></EmiCalculator>
       </header>
     </div>
   );

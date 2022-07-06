@@ -1,0 +1,6 @@
+input{
+    margin: 10px;
+}
+#orderform{
+    display: inline-grid;
+}
