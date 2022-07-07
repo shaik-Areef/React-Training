@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    font-size: 15px;
 }
 
 input[type=range]
@@ -26,6 +27,8 @@ input[type=range]
     float: left;
     width: 25%;
     margin-top: 6px;
+    color:rgb(14, 91, 235);
+    font-size: 20px;
 }
 
 .col-35 {
@@ -49,7 +52,18 @@ input[type=range]
         margin-top: 0;
     }
 }
+
 label{
-    font-size: 20px;
-    color: red;
+    font-size: 25px;
+    color: rgb(38, 231, 13);
+}
+
+label:hover{
+    font-size:35px ;
+    color:rgb(236, 37, 11);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h1{
+    font-size: 45px;
 }
