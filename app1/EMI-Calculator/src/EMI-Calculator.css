@@ -1,4 +1,51 @@
-div{
-    display: inline-grid;
-    margin: 20px;
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=range]
+ {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-35 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+
+    .col-25,
+    .col-35,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }

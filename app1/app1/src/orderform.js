@@ -22,12 +22,12 @@ function OrderForm(Props) {
 
     return (
         <div>
-            <div id='orderform'>
-                <h1>Order Form</h1>
-                <input value={order.item} name="item" onChange={updateValue}></input>
-                <input value={order.price} name='price' type='number' min='0' onChange={updateValue}></input>
-                <input value={order.tax} name='tax' type='number' min='0' onChange={updateValue} placeholder='tax'></input>
-                Total: {totalCalculation()}
+            <h1>Order Form</h1>
+            <div class='container'>
+                <div class='row'><input value={order.item} name="item" onChange={updateValue}></input></div>
+                <div class='row'><input value={order.price} name='price' type='number' min='0' onChange={updateValue}></input></div>
+                <div class='row'> <input value={order.tax} name='tax' type='number' min='0' onChange={updateValue} placeholder='tax'></input></div>
+                <div class='row'> Total: {totalCalculation()}</div>
             </div>
         </div>
     )

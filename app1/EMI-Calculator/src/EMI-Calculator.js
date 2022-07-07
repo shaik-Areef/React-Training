@@ -5,7 +5,7 @@ function EmiCalculator() {
         amount: 50000,
         month: 6,
         interest: 4,
-        
+
     })
 
     function eventHandling(event) {
@@ -14,13 +14,13 @@ function EmiCalculator() {
     }
 
     function emiAmount() {
-        if((data.amount <0)||(data.month <0)||(data.interest <0)){
+        if ((data.amount < 0) || (data.month < 0) || (data.interest < 0)) {
             return "ERROR"
         }
         let monthInterst = parseInt(data.amount * (parseInt(data.interest) / 100))
         let totalInterstAmount = data.month * monthInterst
         let totalAmount = parseInt(data.amount) + totalInterstAmount
-        let montlyAmount = totalAmount/(data.month)
+        let montlyAmount = parseInt(totalAmount / (data.month))
         return montlyAmount
 
     }
@@ -28,17 +28,21 @@ function EmiCalculator() {
 
     return (
         <div>
+
             <h1>EMI Calculator</h1>
-            <h3>lone Amount(₹):  {data.amount}</h3>
-            <input type='range' name='amount' min='20000' max='200000' onChange={eventHandling}></input>
-            <h3>Month:  {data.month}</h3>
-            <input type='range' name='month' min='6' max='36' onChange={eventHandling}></input>
-            <h3>Interest Rate (In percentage (%)):  {data.interest}</h3>
-            <input type='range' name='interest' min='6' max='20' onChange={eventHandling}></input>
-            <h2>Montly EMI Amount (₹): {emiAmount()}</h2>
+            <div class='container'>
+                <div class='row'><div class='col-25'>lone Amount(₹):  {data.amount}</div>
+                    <div class='col-35'><input type='range' name='amount' min='20000' max='200000' onChange={eventHandling}></input></div></div>
+                <div class='row'><div class='col-25'>Month:  {data.month}</div>
+                    <div class='col-35'> <input type='range' name='month' min='6' max='36' onChange={eventHandling}></input></div></div>
+                <div class='row'><div class='col-25'>Interest Rate (In percentage (%)):  {data.interest}</div>
+                    <div class='col-35'>  <input type='range' name='interest' min='6' max='20' onChange={eventHandling}></input></div></div>
+                <div class='row'><div class='col-25'>Montly EMI Amount (₹): {emiAmount()}</div></div>
+            </div>
+        </div >
 
 
-        </div>
+
     )
 
 } export default EmiCalculator
