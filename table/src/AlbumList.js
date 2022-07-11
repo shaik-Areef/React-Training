@@ -37,7 +37,7 @@ function AlbumList() {
                     {
                         photos.map(function (photo) {
 
-                            return <tr>
+                            return <tr key={photo.id}>
                                 <td>{photo.id}</td>
                                 <td>{photo.title}</td>
                                 <td><a href={photo.url}>Click</a></td>

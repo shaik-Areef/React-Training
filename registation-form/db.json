@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "email": "abcd@gmail.com",
+      "password": "12345",
+      "rePassword": "12345"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "email": "xszdr@gmail.com",
+      "password": "123",
+      "rePassword": "123",
+      "id": 4
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "4321",
+      "rePassword": "4321",
+      "id": 5
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "1234",
+      "rePassword": "1234",
+      "id": 6
+    }
+  ]
+}
