@@ -1,0 +1,31 @@
+<html>
+<script>
+    let arr = [1, 2, 3, 4];
+
+    // demo1(arr1);
+    function demo1(arr) {
+        console.log(arr);
+
+        arr.push(5);                      // push() upating the existing array 
+        console.log(arr);                 // [1,2,3,4,5]
+
+        let NewArray = [...arr, 6];               // speard oparator[...] create the new array
+        console.log(NewArray);                     // [1,2,3,4,5,6]
+    }
+
+    demo2(arr);
+    function demo2(arr) {                           // slice(); its create duplicate array
+        const firstPart = arr.slice(0, 2);            //[1,2]
+        console.log(firstPart);
+        const secondPart = arr.slice(-2);               //[3,4]
+        console.log(secondPart);
+        const thridPart =arr.slice(2,3);                  //[3]
+        console.log(thridPart);
+         
+        const final=[...firstPart,6,...thridPart]
+        console.log(final);
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+<script>
+    function SortNumbers(array) {                      // Sort()
+        // const array=[1,2,3,45,6,7,8];
+        console.log(array);
+        array.sort(function (num1, num2) {
+            console.log(num1, num2);
+            return num1 - num2;
+        })
+        console.log(array);
+    }
+    //    SortNumbers([12,34,54,2,4,67]);
+    //    SortNumbers([-4,-7,0,9,3,4,6]);
+
+    // demo 2
+
+    const a1 = [11, 12, 13, 14, 15]
+
+    // for (let index = 0; index < a1.length; index++) {    // for()
+    //     console.log(a1[index]);
+    //     const element = a1[index];
+    // }
+
+
+    // a1.forEach(function (element,index) {              // forEach()
+    //     console.log(element,index)
+    // })
+
+
+    // const a2 = a1.forEach(function (element, index) {              // forEach() undefind
+    //     console.log(element, index)
+    //     return a1 + 1;
+    // })
+    // console.log(a2);
+
+
+
+    //  const UpdatesAraay=a1.map(function (element,index) {        // map()
+    //     return(element+1)
+    // })
+    // console.log(UpdatesAraay);
+
+    function addition(num1, num2) {                                 // addition
+        return num1 + num2;
+
+    }
+    const result = addition(2, 3);
+    console.log(result);
+
+</script>
+
+</html>
