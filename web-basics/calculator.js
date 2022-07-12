@@ -1,7 +1,7 @@
 
-let oprent1 = document.getElementById('opareant1');
-let oprent2 = document.getElementById('opareant2');
+var oparent1 = document.getElementById('opt1');
+var oparent2 = document.getElementById('opt2');
 
 function addition() {
-    console.log(parseInt(oprent1.value) + parseInt(oprent2.value));
+    console.log(parseInt(oparent1.value) + parseInt(oparent2.value));
 }
