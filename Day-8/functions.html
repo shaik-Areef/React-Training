@@ -1,0 +1,26 @@
+<html>
+<script>
+    function foo(a) {
+        // console.log(a);
+        // console.log(arguments);
+        console.log(typeof arguments);
+        console.log(Object.values(arguments));
+        console.log(Object.entries(arguments));
+
+        const elements = Object.values(arguments);
+
+        elements.forEach(element => {
+            console.log(element);
+            
+        });
+
+    }                         
+    foo(1, 2, 3);
+                       
+</script>
+
+<body>
+
+</body>
+
+</html>

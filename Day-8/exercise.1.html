@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body id='container'>
+    
+</body>
+<script>
+    function gerateDiv(a) {
+        console.log(arguments);
+        const elements = Object.values(arguments);
+        // const bodyTag = document.querySelector('body');                        
+        const bodyTag = document.getElementById('container');
+        elements.forEach(element => {
+            console.log(element);
+            const divTag = document.createElement('div');
+            divTag.innerHTML = element
+            bodyTag.appendChild(divTag)
+
+        });
+    }
+    gerateDiv(11, 22, 33);
+</script>
+
+
+</html>

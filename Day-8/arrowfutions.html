@@ -1,0 +1,32 @@
+<html>
+    <body id='container'>
+
+    </body>
+<script>
+    //     const gerateDiv = (number) => {
+    //     const bodyTag = document.getElementById('container');
+    //     number.forEach(value => {
+    //         console.log(value);
+    //         const divTag = document.createElement('div');
+    //         divTag.innerHTML = value
+    //         bodyTag.appendChild(divTag)
+
+    //     });
+    // }
+
+    const gerateDiv = (numbers) => {
+        const bodyTag = document.getElementById('container');
+        numbers.forEach(value => {
+            console.log(value);
+            const divTag = document.createElement('input');
+            divTag.value = value;
+            bodyTag.appendChild(divTag)
+
+        });
+    }
+    gerateDiv([11, 22, 33]);
+</script>
+
+
+
+</html>
