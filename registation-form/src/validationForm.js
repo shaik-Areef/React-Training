@@ -61,15 +61,15 @@ function ValidationForm() {
             <div class='childContainer'>
                 <div class='row'>
                     <div class='col-32'>  Email ID:</div>
-                    <div class='col-33'><input type='text' placeholder='enter Email Id' name='email' onChange={eventHandler} value={data.email} /></div>
+                    <div class='col-33'><input type='text' placeholder='enter Email Id' name='email' onChange={eventHandler} value={data.title} onChange={eventHandler}value={data.title} onChange={eventHandler}={data.email} /></div>
                 </div>
                 <div class='row'>
                     <div class='col-32'> Password:</div>
-                    <div class='col-33'><input type='password' name='password' placeholder='enter Password' onChange={eventHandler} value={data.password} /></div>
+                    <div class='col-33'><input type='password' name='password' placeholder='enter Password' onChange={eventHandler} value={data.title} onChange={eventHandler}value={data.title} onChange={eventHandler}={data.password} /></div>
                 </div>
                 <div class='row'>
                     <div class='col-32'> Confirm-password:</div>
-                    <div class='col-33'><input type='password' name='rePassword' placeholder='re-enter Password' onChange={eventHandler} value={data.rePassword} /></div>
+                    <div class='col-33'><input type='password' name='rePassword' placeholder='re-enter Password' onChange={eventHandler} value={data.title} onChange={eventHandler}value={data.title} onChange={eventHandler}={data.rePassword} /></div>
                     {error ? <div class='col-34'><span id='error'>Password should be same</span></div> : ""}
                 </div>
 
