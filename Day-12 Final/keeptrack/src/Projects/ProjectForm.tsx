@@ -1,8 +1,18 @@
-import React from "react";
 
-function ProjectForm() {
+import React, { SyntheticEvent } from 'react';
+import { Project } from './Project';
+interface ProjectFormProps {
+    onSave: (project: Project) => void;
+    onCancel: () => void;
+}
+
+function ProjectForm({ onCancel, onSave }: ProjectFormProps) {
+    const handleSubmit = (event: SyntheticEvent) => {
+        event.preventDefault();
+        onSave(new Project({ name: 'Updated Project' }));
+    };
     return (
-        <form className="input-group vertical">
+        <form className="input-group vertical" onSubmit={handleSubmit}>
             <label htmlFor="name">Project Name</label>
             <input type="text" name="name" placeholder="enter name" />
 
@@ -16,9 +26,9 @@ function ProjectForm() {
             <input type="checkbox" name="isActive" />
 
             <div className="input-group">
-                <button className="primary bordered medium">Save</button>
+                <button className="primary bordered medium" >Save</button>
                 <span />
-                <button type="button" className="bordered medium">
+                <button type="button" className="bordered medium" onClick={onCancel}>
                     cancel
                 </button>
             </div>
