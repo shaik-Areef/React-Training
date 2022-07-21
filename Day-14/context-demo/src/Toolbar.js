@@ -1,9 +1,9 @@
 import ThemedButton from "./ThemedButton";
-const Toolbar=()=> {
+const Toolbar = () => {
     return (
-      <div>
-        <ThemedButton />
-      </div>
+        <div>
+            <ThemedButton />
+        </div>
     );
-  }
-  export default Toolbar;
+}
+export default Toolbar;
