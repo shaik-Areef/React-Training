@@ -1,12 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
-import LogState from './Counter';
+import LogState, { ADD_TODO, DECREMENT, INCREMENT } from './Counter';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import Counter from './Counter';
+
+
+//store
+var store = createStore(reducer, enableDevTools());
+
+function enableDevTools() {
+  return (
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
+}
+
+//reducer
+function reducer(state = { counter: 10 }, action) {
+  switch (action.type) {
+    case ADD_TODO:
+      return { ...state, dataformComponent: action.payload }
+    case INCREMENT:
+      return state + 1;
+    case DECREMENT:
+      return state - 1;
+    default:
+      return state;
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <LogState></LogState>
-    </div>
+    <Provider store={store}>
+      <Counter/>
+    </Provider>
   );
 }
 

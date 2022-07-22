@@ -1,48 +1,55 @@
-import {createStore} from 'redux';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { createStore } from 'redux';
+
 //action types
-//action types
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+export const ADD_TODO = 'ADD_TODO';
 
 //action creators
-function increment() {
-    return { type: INCREMENT };
+function increment(name) {
+    return {
+        type: ADD_TODO,
+        payload: { test: name }
+    };
 }
 function decrement() {
     return { type: DECREMENT };
 }
 
-//reducer
-function reducer(state = 0, action) {
-    switch (action.type) {
-        case INCREMENT:
-            return state + 1;
-        case DECREMENT:
-            return state - 1;
-        default:
-            return state;
-    }
+
+
+export default function Counter() {
+    const reduxState = useSelector((state) => state);
+    const dispatch = useDispatch();
+    return (
+        <div>
+            <div>Count: {reduxState.counter}</div>
+            <button onClick={() => dispatch(increment())}>+</button>
+            <button onClick={() => dispatch(decrement())}>-</button>
+        </div>
+    );
 }
 
-//store
-var store = createStore(reducer, enableDevTools());
+// export default function logState() {
+//     console.log(store.getState().toString());
+//     // const [name, setName] = useState();
+//     return (
+//         <div>
+//             {/* <input onChange={(event) => setName(event.target.value)} /> value={name} */}
+//             <button onClick={() => store.dispatch(increment("areef"))}>Increment</button>
+//             <button onClick={() => store.dispatch(decrement())}>Decrement</button>
+//         </div>
+//     )
+// }
 
-function enableDevTools() {
-  return (
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  );
-}
+// store.subscribe(logState);
 
-export default function logState() {
-    console.log(store.getState().toString());
-}
-
-store.subscribe(logState);
-
-store.dispatch({ type: '' });
-store.dispatch(increment());
-store.dispatch(increment());
-store.dispatch(decrement());
-store.dispatch(decrement());
-store.dispatch(decrement());
-store.dispatch(decrement());
+// store.dispatch({ type: '' });
+// store.dispatch(increment());
+// // store.dispatch(increment());
+// // store.dispatch(decrement());
+// // store.dispatch(decrement());
+// // store.dispatch(decrement());
+// // store.dispatch(decrement());
