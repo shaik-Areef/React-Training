@@ -10,9 +10,7 @@ export const ADD_TODO = 'ADD_TODO';
 //action creators
 function increment(name) {
     return {
-        type: ADD_TODO,
-        payload: { test: name }
-    };
+        type: INCREMENT};
 }
 function decrement() {
     return { type: DECREMENT };
