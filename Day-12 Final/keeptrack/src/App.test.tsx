@@ -1,9 +1,20 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import ProjectsPage from './Projects/Projects_page';
+import renderer from 'react-test-renderer';
 
-xtest('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+
+describe('<Projectspage />', () => {
+  test('should render without crashing', () => {
+    render(<App />);
+  });
+
+  test('snapshot', () => {
+    const tree = renderer.create(<ProjectsPage />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
+
+
