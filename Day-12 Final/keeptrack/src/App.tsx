@@ -5,9 +5,12 @@ import ProjectsPage from './Projects/Projects_page';
 import { BrowserRouter as Router, NavLink, Route, Routes } from 'react-router-dom';
 import HomePage from './Home/HomePage';
 import ProjectPage from './Projects/ProjectPage';
+import { Provider } from 'react-redux';
+import { store } from './State';
 
 function App() {
-  return (
+  return( <Provider store={store}>
+
     <Router>
       <header className="sticky">
         <span className="logo">
@@ -29,6 +32,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+  </Provider>
   );
 }
 
