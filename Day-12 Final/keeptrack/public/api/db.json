@@ -157,8 +157,8 @@
       "imageUrl": "/assets/placeimg_500_300_arch2.jpg",
       "contractTypeId": 5,
       "contractSignedOn": "2017-02-16T12:28:52.794Z",
-      "budget": 55137,
-      "isActive": false
+      "budget": 55499,
+      "isActive": true
     },
     {
       "id": 17,
@@ -237,7 +237,7 @@
       "imageUrl": "/assets/placeimg_500_300_arch3.jpg",
       "contractTypeId": 7,
       "contractSignedOn": "2018-01-11T17:09:55.953Z",
-      "budget": 36862,
+      "budget": 36999,
       "isActive": true
     },
     {
@@ -277,7 +277,7 @@
       "imageUrl": "/assets/placeimg_500_300_arch10.jpg",
       "contractTypeId": 3,
       "contractSignedOn": "2013-07-25T14:44:08.646Z",
-      "budget": 97304,
+      "budget": 97399,
       "isActive": true
     },
     {

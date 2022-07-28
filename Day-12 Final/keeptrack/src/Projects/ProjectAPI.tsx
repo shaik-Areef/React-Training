@@ -1,4 +1,5 @@
 import { Project } from './Project';
+
 const baseUrl = 'http://localhost:4000';
 const url = `${baseUrl}/projects`;
 
@@ -51,9 +52,9 @@ function convertToProjectModel(item: any): Project {
 
 const projectAPI = {
 
-  get(page = 1, limit = 20) {
+  get(page = 1, limit = 10) {
     return fetch(`${url}?_page=${page}&_limit=${limit}&_sort=name`)
-      .then(delay(600))
+      .then(delay(2000))
       .then(checkStatus)
       .then(parseJSON)
       .then(convertToProjectModels)

@@ -2,10 +2,11 @@
 import React, { SyntheticEvent, useState } from 'react';
 import { Project } from './Project';
 import { useDispatch } from 'react-redux';
- import { saveProject } from './state/projectActions';
- import { ThunkDispatch } from 'redux-thunk';
- import { ProjectState } from './state/projectTypes';
- import { AnyAction } from 'redux';
+//  import { saveProject } from './state/projectActions';
+import { ThunkDispatch } from 'redux-thunk';
+import { ProjectState } from './state/projectTypes';
+import { useSaveProject } from './ProjectHooks';
+import { AnyAction } from 'redux';
 
 interface ProjectFormProps {
     project: Project;
@@ -13,10 +14,10 @@ interface ProjectFormProps {
     onCancel: () => void;
 }
 
-function ProjectForm({ 
-    onCancel, 
+function ProjectForm({
+    onCancel,
     // onSave, 
-    project: initialProject, }: ProjectFormProps) {
+    project: initialProject }: ProjectFormProps) {
 
     const [project, setProject] = useState(initialProject);
 
@@ -28,17 +29,20 @@ function ProjectForm({
 
     const dispatch = useDispatch<ThunkDispatch<ProjectState, any, AnyAction>>();
 
+    const { mutate: saveProject, isLoading } = useSaveProject();
+
     const handleSubmit = (event: SyntheticEvent) => {
         event.preventDefault();
         if (!isValid()) return;
         // onSave(new Project({ name: 'Updated Project' }));
         // onSave(project);
-        dispatch(saveProject(project));
+        // dispatch(saveProject(project));
+        saveProject(project);
     };
 
     const handleChange = (event: any) => {
         const { type, name, value, checked } = event.target;
-        
+
         let updatedValue = type === 'checkbox' ? checked : value;
 
         if (type === 'number') {
@@ -82,7 +86,12 @@ function ProjectForm({
     }
 
     return (
-        <form className="input-group vertical" onSubmit={handleSubmit}>
+        <form aria-label="Edit a Project"
+            name="projectForm"
+            className="input-group vertical"
+            onSubmit={handleSubmit}>
+
+            {isLoading && <span className="toast">Saving...</span>}
             <label htmlFor="name">Project Name</label>
             <input type="text"
                 name="name"

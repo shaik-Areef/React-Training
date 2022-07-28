@@ -27,7 +27,7 @@ describe("<ProjectCard />", () => {
         });
         handleEdit = jest.fn();
 
-        
+
     });
 
     it("should initially render", () => {
@@ -63,14 +63,5 @@ describe("<ProjectCard />", () => {
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
-    test('snapshot', () => {
-        const tree = renderer
-            .create(
-                <MemoryRouter>
-                    <ProjectCard project={project} onEdit={handleEdit} />
-                </MemoryRouter>
-            )
-            .toJSON();
-        expect(tree).toMatchSnapshot();
-    });
+
 });

@@ -4,6 +4,7 @@ import { Project } from './Project';
 interface ProjectDetailProps {
   project: Project;
 }
+
 export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <div className="row">
@@ -25,7 +26,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             <p>
               <mark className="active">
                 {' '}
-                {project.isActive ? 'active' : 'inactive'}
+                {project.isActive ? 'Active' : 'Inactive'}
               </mark>
             </p>
           </section>
