@@ -1,5 +1,6 @@
 import { Link, Routes, Route } from "react-router-dom";
 import MovieDetail from "./MovieDetails";
+
 function MovieList({ movies }) {
   return (
     <div>
