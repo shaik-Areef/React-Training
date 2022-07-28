@@ -18,20 +18,19 @@ function ProjectList({ projects }: ProjectListProps) {
         // console.log(project);
         setProjectBeingEdited(project);
     };
+
     const cancelEditing = () => {
         setProjectBeingEdited({});
     };
 
     const items = projects.map((Project) => (
         <div className='cols-sm' key={Project.id}>
-
-
             {/* <ProjectCard project={Project} onEdit={handleEdit}></ProjectCard>
             <ProjectForm></ProjectForm> */}
             {Project === projectBeingEdited ? (
-                <ProjectForm project={Project} 
-                // onSave={onSave} 
-                onCancel={cancelEditing} />
+                <ProjectForm project={Project}
+                    // onSave={onSave} 
+                    onCancel={cancelEditing} />
             ) : (
                 <ProjectCard project={Project} onEdit={handleEdit} />
             )}

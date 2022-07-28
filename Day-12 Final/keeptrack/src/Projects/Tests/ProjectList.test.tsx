@@ -6,13 +6,17 @@ import { MOCK_PROJECTS } from '../MockProjects';
 import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { store } from '../../State';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 describe('<ProjectList />', () => {
+    const queryClient = new QueryClient()
     const setup = () =>
-        render(
+      render(
             <Provider store={store}>
                 <MemoryRouter>
+                <QueryClientProvider client={queryClient}>
                     <ProjectList projects={MOCK_PROJECTS} />
+                    </QueryClientProvider>
                 </MemoryRouter>
             </Provider>
         );

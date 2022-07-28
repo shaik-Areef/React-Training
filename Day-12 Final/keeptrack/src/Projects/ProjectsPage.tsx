@@ -121,7 +121,7 @@
 // }
 
 // export default ProjectsPage;
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import { useProjects } from './ProjectHooks';
 import ProjectList from './ProjectList';
 
@@ -140,12 +140,12 @@ function ProjectsPage() {
   return (
     <>
       <h1>Projects</h1>
-
+      
       {data ? (
         <>
           {isFetching && <span className="toast">Refreshing...</span>}
           <ProjectList projects={data} />
-          <div className="row">
+          <div className="row" data-testid='Project' >
             <div className="col-sm-4">Current page: {page + 1}</div>
             <div className="col-sm-4">
               <div className="button-group right">
@@ -163,7 +163,7 @@ function ProjectsPage() {
                       setPage((oldPage) => oldPage + 1);
                     }
                   }}
-                  disabled={data.length != 10}
+                  disabled={data.length !== 10}
                 >
                   Next
                 </button>

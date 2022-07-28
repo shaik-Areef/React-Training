@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ProjectsPage from './Projects/Projects_page';
+import ProjectsPage from './Projects/ProjectsPage';
 import { BrowserRouter as Router, NavLink, Route, Routes } from 'react-router-dom';
 import HomePage from './Home/HomePage';
 import ProjectPage from './Projects/ProjectPage';

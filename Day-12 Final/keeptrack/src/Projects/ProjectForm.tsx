@@ -1,12 +1,12 @@
 
 import React, { SyntheticEvent, useState } from 'react';
 import { Project } from './Project';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 //  import { saveProject } from './state/projectActions';
-import { ThunkDispatch } from 'redux-thunk';
-import { ProjectState } from './state/projectTypes';
+// import { ThunkDispatch } from 'redux-thunk';
+// import { ProjectState } from './state/projectTypes';
 import { useSaveProject } from './ProjectHooks';
-import { AnyAction } from 'redux';
+// import { AnyAction } from 'redux';
 
 interface ProjectFormProps {
     project: Project;
@@ -27,7 +27,7 @@ function ProjectForm({
         budget: '',
     });
 
-    const dispatch = useDispatch<ThunkDispatch<ProjectState, any, AnyAction>>();
+    // const dispatch = useDispatch<ThunkDispatch<ProjectState, any, AnyAction>>();
 
     const { mutate: saveProject, isLoading } = useSaveProject();
 
@@ -93,49 +93,59 @@ function ProjectForm({
 
             {isLoading && <span className="toast">Saving...</span>}
             <label htmlFor="name">Project Name</label>
-            <input type="text"
+            <input
+                type="text"
+                id="name"
                 name="name"
                 placeholder="enter name"
                 value={project.name}
                 onChange={handleChange} />
             {errors.name.length > 0 && (
-                <div className="card error">
+                <div role="alert" className="card error">
                     <p>{errors.name}</p>
                 </div>
             )}
 
             <label htmlFor="description">Project Description</label>
-            <textarea name="description"
+            <textarea
+                name="description"
+                id="description"
+                aria-label="project description"
                 placeholder="enter description"
                 value={project.description}
                 onChange={handleChange} />
             {errors.description.length > 0 && (
-                <div className="card error">
+                <div role="alert" className="card error">
                     <p>{errors.description}</p>
                 </div>
             )}
 
             <label htmlFor="budget">Project Budget</label>
-            <input type="number"
+            <input
+                type="number"
+                id="budget"
                 name="budget"
                 placeholder="enter budget"
                 value={project.budget}
                 onChange={handleChange} />
             {errors.budget.length > 0 && (
-                <div className="card error">
+                <div role="alert" className="card error">
                     <p>{errors.budget}</p>
                 </div>
             )}
 
 
             <label htmlFor="isActive">Active?</label>
-            <input type="checkbox"
+            <input
+                type="checkbox"
                 name="isActive"
                 checked={project.isActive}
                 onChange={handleChange} />
 
             <div className="input-group">
-                <button className="primary bordered medium" >Save</button>
+                <button className="primary bordered medium" >
+                    Save
+                </button>
                 <span />
                 <button type="button" className="bordered medium" onClick={onCancel}>
                     cancel
