@@ -8,7 +8,7 @@ describe('<HomePage />', () => {
     render(<HomePage />);
     expect(screen.getByRole("heading")).toHaveTextContent("Home");
   });
-  
+
   test('snapshot', () => {
     const tree = renderer.create(<HomePage />).toJSON();
     expect(tree).toMatchSnapshot();

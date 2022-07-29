@@ -24,7 +24,6 @@ function checkStatus(response: any) {
       url: response.url,
     };
     console.log(`log server http error: ${JSON.stringify(httpErrorInfo)}`);
-
     let errorMessage = translateStatusToErrorMessage(httpErrorInfo.status);
     throw new Error(errorMessage);
   }

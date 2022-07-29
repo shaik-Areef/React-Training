@@ -15,7 +15,6 @@ function ProjectCard(props: ProjectCardProps) {
     const { project, onEdit } = props;
 
     const handelEditClick = (projectBeingEdited: Project) => {
-        // console.log(projectBeingEdited)
         onEdit(projectBeingEdited);
     }
 
@@ -38,7 +37,6 @@ function ProjectCard(props: ProjectCardProps) {
                     <span className="icon-edit "></span>
                     Edit
                 </button>
-
             </section>
         </div>
     );
