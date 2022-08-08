@@ -1,0 +1,14 @@
+.product-card{
+    height: 350px;
+    width: 200px;
+    float: left;
+    margin: 10px;
+    align-items: center;
+    border: 1px solid blue;
+
+}
+#product-img{
+    width: 200px;
+    margin: auto;
+   
+}

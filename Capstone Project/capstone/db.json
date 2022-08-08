@@ -1,0 +1,296 @@
+{
+  "data": [
+    {
+      "id": "fdf80882-1fe3-4d20-8dcd-1c2e4d5e3b1e",
+      "title": "Roadstar",
+      "description": "Men Pure Cotton Casual Shirt",
+      "price": 3999,
+      "imgUrl": "Assets/images/Product1.png",
+      "rating": 4.3
+    },
+    {
+      "id": "9421afdd-4009-4415-9a13-73fbdba72d55",
+      "title": "Mast & Harbour",
+      "description": "Regular Checked Casual Shirt",
+      "price": 2999,
+      "imgUrl": "Assets/images/Product2.png",
+      "rating": 4.2
+    },
+    {
+      "id": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "title": "Roadster",
+      "description": "Printed casual Shirt",
+      "price": 2999,
+      "imgUrl": "Assets/images/Product3.png",
+      "rating": 4.1
+    },
+    {
+      "id": "365b16c6-b112-4162-8403-b24671d476dc",
+      "title": "HIGHLANDER",
+      "description": "Men Slim Fit Casual Shirt",
+      "price": 2999,
+      "imgUrl": "Assets/images/Product4.png",
+      "rating": 4.1
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 1
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 2
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 3
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 4
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 5
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98574987",
+      "feedback": "hello",
+      "rating": 4,
+      "id": 6
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98789762",
+      "feedback": "hello....",
+      "rating": 4,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "johnson@g.com",
+      "phone": "",
+      "feedback": "",
+      "rating": 0,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 8
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "89898989",
+      "feedback": "hello world",
+      "rating": 3,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 9
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "89898989",
+      "feedback": "huhhehf",
+      "rating": 4,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 10
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "",
+      "feedback": "hhhhhhh",
+      "rating": 4,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 11
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "98678965",
+      "feedback": "ghbbjj",
+      "rating": 4,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 12
+    },
+    {
+      "name": "Johnhhh",
+      "email": "johnson@g.com",
+      "phone": "986789658",
+      "feedback": "vg gg ",
+      "rating": 3,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 13
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "9989797979",
+      "feedback": "test1.....",
+      "rating": 3,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "feedback": "",
+      "rating": 0,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 15
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "feedback": "",
+      "rating": 0,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 16
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "feedback": "",
+      "rating": 0,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 17
+    },
+    {
+      "name": "arr",
+      "email": "arr@g.com",
+      "phone": "23456354",
+      "feedback": "dfghfhklj;kljkhjgfkv jh yg yglg lgjkjyjggkukguigk, bhjggkuigkugulgkb nmbliguigk ",
+      "rating": 4,
+      "productId": "9421afdd-4009-4415-9a13-73fbdba72d55",
+      "id": 18
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@ga.com",
+      "phone": "9949434196",
+      "feedback": "fyvgvnnndb sbvrsuv ru  jbvrubgire iriniehoaoew ibigwrbig rbgibrig ibirgnrein",
+      "rating": 4,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 19
+    },
+    {
+      "name": "Johnson ",
+      "email": "areef@gmail.com",
+      "phone": "989897899",
+      "feedback": "rftcycyvv vuvuu uguguyggufuytycv tuu ugugug uug ugugg  guu u ugugug uguguy uguyyu",
+      "rating": 4,
+      "productId": "a59319c0-6048-448f-aaf6-376578e4d5c5",
+      "id": 20
+    },
+    {
+      "name": "hjgf",
+      "email": "johnson@g.com",
+      "phone": "8976543",
+      "feedback": ";iolkjghfzdfv, jgfjhghk.hjhgbfvcvjk.kjghb jkjgddfukzdvcjhlukfxbc bnmb,jvhmn",
+      "rating": 1,
+      "productId": "9421afdd-4009-4415-9a13-73fbdba72d55",
+      "id": 21
+    },
+    {
+      "name": "kluf",
+      "email": "klhg@gmail.com",
+      "phone": "898765431",
+      "feedback": "k;lfjghdvbkjl.kb kjjgkgkgk jbhkhvmv jhjj jjhvjl.ldhfgcjklj;klkgh gukh ",
+      "rating": 4,
+      "productId": "9421afdd-4009-4415-9a13-73fbdba72d55",
+      "id": 22
+    }
+  ],
+  "contactData": {
+    "address": "280 ParK Avenue Z,Cross cut Complex, Bangalore, India",
+    "phone": [
+      "(91) 987 654 3210",
+      "(91) 987 654 3211"
+    ],
+    "email": "contact@sparkclothing.com"
+  },
+  "getInTouchData": [
+    {
+      "name": "aswin",
+      "email": "aswin210@gmail.com",
+      "phone": "3333333123",
+      "message": "Hi",
+      "id": 1
+    },
+    {
+      "name": "areef",
+      "email": "areef@gmail.com",
+      "phone": "948494839",
+      "message": "hello",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "id": 5
+    },
+    {
+      "name": "areffff",
+      "email": "aefff@g.com",
+      "phone": "37549303",
+      "message": "hi",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": "",
+      "id": 8
+    }
+  ]
+}
