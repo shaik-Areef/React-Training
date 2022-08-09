@@ -57,7 +57,7 @@ function ContactUs() {
                                 // backgroundImage: `url("${process.env.PUBLIC_URL}/Assets/images/getintouch.png")`
 
                             }}>
-                                <img  width={"100%"} height={"100%"} src={`${process.env.PUBLIC_URL}/Assets/images/getintouch.png`}></img>
+                                <img width={"100%"} height={"300px"} src={`${process.env.PUBLIC_URL}/Assets/images/getintouch.png`}></img>
                             </div>
                         </Col>
 

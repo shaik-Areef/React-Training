@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Navigationbar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand as={Link} to="/" ><img id='Logo' src={process.env.PUBLIC_URL + '/Assets/images/LOGO.jpg'} alt="Logo" /></Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" ><img id='Logo' src={process.env.PUBLIC_URL + '/Assets/images/LOGO.jpg'} alt="Logo" /><span id='shopName'>Men's Fashions</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="  ml-auto justify-content-end " id="responsive-navbar-nav">
                 <Nav>
@@ -22,12 +22,12 @@ const Navigationbar = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem >
-                        <NavLink eventKey="3" as={Link} to="/aboutUs/content">
+                        <NavLink eventKey="3" as={Link} to="/about-us">
                             <span><img className="icon" src={process.env.PUBLIC_URL + '/Assets/icons/AboutUs.png'} alt="AboutUsIcon" />AboutUs</span>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink eventKey="4" as={Link} to="/contactUs/content">
+                        <NavLink eventKey="4" as={Link} to="/contact-us">
                             <span><img className="icon" src={process.env.PUBLIC_URL + '/Assets/icons/ContactUs.png'} alt="ContactUsIcon" />ContactUs</span>
                         </NavLink>
                     </NavItem>

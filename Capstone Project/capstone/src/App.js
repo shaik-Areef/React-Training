@@ -17,8 +17,8 @@ function App() {
           <Route exact path='/' element={<TabProducts/>} />
           <Route exact path='/products/product-category' element={<Products />} />
           <Route exact path='/products/product-category/:id' element={<ProductDetails />} />
-          <Route exact path='/aboutUs/content' element={<AboutUs />} />
-          <Route exact path='/contactUs/content' element={<ContactUs />} />
+          <Route exact path='/about-us' element={<AboutUs />} />
+          <Route exact path='/contact-us' element={<ContactUs />} />
         </Routes>
       </Router>
     {/* <GetInTouch/> */}

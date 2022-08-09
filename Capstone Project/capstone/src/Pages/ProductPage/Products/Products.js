@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Row, Col, Container } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
+import Form from 'react-bootstrap/Form';
 import './Products.css'
 
 function Products() {
@@ -17,22 +19,33 @@ function Products() {
 
 
     return (
-        <div>
-            <h2>Products Page</h2>
-            {data.map((user) => (
-                <div className="product-card" key={user.id}>
-                    <Container >
-                        <Row>
-                            <Col xs={6} md={4}>
-                                <Link to={user.id}>  <img id="product-img" src={process.env.PUBLIC_URL + '/' + user.imgUrl} alt={user.title} /> </Link>
-                            </Col>
-                        </Row>
-                    </Container >;
 
-                </div>
-            ))}
+        <Container>
+            <Row>
 
-        </div>
+
+
+                {data.map((user) => (
+                    <Col style={{ margin: "8px" }}>
+                        <div className="product-card" key={user.id}>
+                            <Card style={{ width: '18rem' }}>
+                                <Link to={user.id}>  <Card.Img height={"200px"} width={"50px"} variant="top" id="product-img" src={process.env.PUBLIC_URL + '/' + user.imgUrl} alt={user.title} /></Link>
+                                <Card.Body>
+                                    <Card.Title>{user.title}</Card.Title>
+                                    <Card.Text>
+                                        {user.description}
+                                    </Card.Text>
+                                    <div><Form.Label >Price: </Form.Label><Form.Text muted>{user.price} </Form.Text></div>
+                                    <div><Form.Label >Rating: </Form.Label><Form.Text muted>{user.rating} ⭐</Form.Text></div>
+                                    <Card.Link as={Link} to={user.id}>View more</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Col>
+                ))}
+
+            </Row>
+        </Container>
     )
 
 }

@@ -4,12 +4,12 @@ function TabProducts() {
   return <div style={{
     marginLeft: "auto",
     width: "60%",
-    height:'900px',
+    // height:'900px',
     marginRight: "auto"
   }}>
     <Carousel>
       <Carousel.Item>
-        <img
+        <img height={"400"}
           className="d-block w-100"
           src={process.env.PUBLIC_URL + '/Assets/images/carousel/image5.jpg'}
           alt="First slide"
@@ -20,7 +20,7 @@ function TabProducts() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <img height={"400"}
           className="d-block w-100"
           src={process.env.PUBLIC_URL + '/Assets/images/carousel/image2.jpg'}
           alt="Second slide"
@@ -32,7 +32,7 @@ function TabProducts() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <img height={"400"}
           className="d-block w-100"
           src={process.env.PUBLIC_URL + '/Assets/images/carousel/image1.jpg'}
           alt="Third slide"
@@ -47,7 +47,7 @@ function TabProducts() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
+        <img height={"400"}
           className="d-block w-100"
           src={process.env.PUBLIC_URL + '/Assets/images/carousel/image3.jpg'}
           alt="Third slide"

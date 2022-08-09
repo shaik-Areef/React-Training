@@ -1,6 +1,8 @@
-#imgdiv{
-    display: flex; 
+#imgdiv {
+    display: flex;
+
 }
-/* #AbouUsMain{
-    
-} */
+#AboutUs {
+    margin-left: auto;
+    margin-right: auto;
+}

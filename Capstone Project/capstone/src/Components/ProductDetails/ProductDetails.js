@@ -20,10 +20,29 @@ function ProductDetails() {
             .then((res) => res.json())
             .then((res) => {
                 console.log(res);
+                console.log("get product details successfully");
                 setData(res)
             })
         getAllReviews()
     }, []);
+
+    useEffect(() => {
+        if (reviews.length && data) {
+            if (data?.rating !== getrating()) {
+                fetch("http://localhost:5000/data/" + params.id, {
+                    method: 'PUT',
+                    body: JSON.stringify({ ...data, rating: getrating() }),
+                    headers: { "Content-type": "application/json" }
+                })
+                    .then((res) => res.json())
+                    .then((res) => {
+                        console.log(res);
+                        console.log("Updated rating successfully");
+                    })
+
+            }
+        }
+    }, [reviews]);
 
 
     const getAllReviews = () => {
@@ -34,6 +53,7 @@ function ProductDetails() {
                     return item.productId === params.id
                 })
                 setReviews(result)
+                console.log("get reviews successfully");
             })
 
     }
@@ -53,18 +73,15 @@ function ProductDetails() {
         if (reviews.length) {
             let rating = 0
             reviews.map(item => {
-
                 rating = rating + item.rating
             })
-
-            return rating / reviews.length
+            return (rating / reviews.length).toFixed(1)
         }
         return 0;
     }
 
     return (
         <div id='container'>
-
             <div id="mainblock">
                 <div id="subBlock">
                     <img src={process.env.PUBLIC_URL + '/' + data.imgUrl} alt={data.title} />
@@ -77,7 +94,7 @@ function ProductDetails() {
                             {data.description}
                         </Form.Text></div>
                     <div><Form.Label >Price: </Form.Label><Form.Text muted>{data.price} </Form.Text></div>
-                    <div><Form.Label >Rating: </Form.Label><Form.Text muted>{getrating()} ⭐</Form.Text></div>
+                    <div><Form.Label >Rating: </Form.Label><Form.Text muted>{getrating()} ⭐ | {reviews.length}</Form.Text></div>
                     <Button style={{ padding: 0 }} variant="link" onClick={handleShow}>
                         Feedback
                     </Button>
