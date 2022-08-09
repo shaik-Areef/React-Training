@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Navigationbar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand as={Link} to="/" ><img id='Logo' src={process.env.PUBLIC_URL + '/Assets/images/LOGO.jpg'} alt="Logo" /><span id='shopName'>Men's Fashions</span></Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" ><span id='shopName'><img id='Logo' src={process.env.PUBLIC_URL + '/Assets/images/LOGO.jpg'} alt="Logo" /> SCcart</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="  ml-auto justify-content-end " id="responsive-navbar-nav">
                 <Nav>

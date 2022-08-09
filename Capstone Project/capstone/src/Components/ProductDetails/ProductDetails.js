@@ -28,7 +28,7 @@ function ProductDetails() {
 
     useEffect(() => {
         if (reviews.length && data) {
-            if (data?.rating !== getrating()) {
+            if (data?.rating?.toString() !== getrating()?.toString()) {
                 fetch("http://localhost:5000/data/" + params.id, {
                     method: 'PUT',
                     body: JSON.stringify({ ...data, rating: getrating() }),
@@ -55,7 +55,6 @@ function ProductDetails() {
                 setReviews(result)
                 console.log("get reviews successfully");
             })
-
     }
 
     const handleClose = (isPostReview) => {
@@ -87,14 +86,18 @@ function ProductDetails() {
                     <img src={process.env.PUBLIC_URL + '/' + data.imgUrl} alt={data.title} />
                 </div>
                 <div id="subBlock">
-                    {/* <h5><strong>{data.title}</strong></h5> */}
                     <h1>{data.title}</h1>
                     <div> <Form.Label >Description: </Form.Label>
                         <Form.Text muted>
                             {data.description}
-                        </Form.Text></div>
-                    <div><Form.Label >Price: </Form.Label><Form.Text muted>{data.price} </Form.Text></div>
-                    <div><Form.Label >Rating: </Form.Label><Form.Text muted>{getrating()} ⭐ | {reviews.length}</Form.Text></div>
+                        </Form.Text>
+                    </div>
+                    <div>
+                        <Form.Label >Price: </Form.Label><Form.Text muted>{data.price} </Form.Text>
+                    </div>
+                    <div>
+                        <Form.Label >Rating: </Form.Label><Form.Text muted>{getrating()} ⭐ | {reviews.length}</Form.Text>
+                    </div>
                     <Button style={{ padding: 0 }} variant="link" onClick={handleShow}>
                         Feedback
                     </Button>

@@ -2,11 +2,11 @@
   "data": [
     {
       "id": "fdf80882-1fe3-4d20-8dcd-1c2e4d5e3b1e",
-      "title": "Mast & Harbour",
-      "description": "Regular Checked Casual Shirt",
-      "price": 2999,
+      "title": "Roadstar",
+      "description": "Men Pure Cotton Casual Shirt",
+      "price": 3999,
       "imgUrl": "Assets/images/products/Product1.jpg",
-      "rating": "2.3"
+      "rating": "2.5"
     },
     {
       "id": "9421afdd-4009-4415-9a13-73fbdba72d55",
@@ -14,23 +14,23 @@
       "description": "Regular Checked Casual Shirt",
       "price": 2999,
       "imgUrl": "Assets/images/products/Product2.jpg",
-      "rating": 0
+      "rating": "1.0"
     },
     {
       "id": "a59319c0-6048-448f-aaf6-376578e4d5c5",
-      "title": "Roadster",
-      "description": "Printed casual Shirt",
+      "title": "HIGHLANDER",
+      "description": "Men Slim Fit Casual Shirt",
       "price": 2999,
       "imgUrl": "Assets/images/products/Product3.jpg",
-      "rating": 3
+      "rating": 0
     },
     {
-      "rating": 0,
-      "title": "Roadster",
-      "description": "Printed casual Shirt",
+      "id": "365b16c6-b112-4162-8403-b24671d476dc",
+      "title": "HIGHLANDER",
+      "description": "Men Slim Fit Casual Shirt",
       "price": 2999,
       "imgUrl": "Assets/images/products/Product4.jpg",
-      "id": "365b16c6-b112-4162-8403-b24671d476dc"
+      "rating": 0
     },
     {
       "id": "822caa01-065e-4f84-8831-dd31fe036e6b",
@@ -38,7 +38,7 @@
       "description": "Men Pure Cotton Casual Shirt",
       "price": 3999,
       "imgUrl": "Assets/images/products/Product5.jpg",
-      "rating": 0
+      "rating": "5.0"
     },
     {
       "id": "10313c5c-16b4-4256-b22c-06e462605887",
@@ -78,7 +78,7 @@
       "description": "Men Slim Fit Casual Shirt",
       "price": 2999,
       "imgUrl": "Assets/images/products/Product10.jpg",
-      "rating": 0
+      "rating": "3.0"
     }
   ],
   "reviews": [
@@ -117,6 +117,51 @@
       "rating": 2,
       "productId": "fdf80882-1fe3-4d20-8dcd-1c2e4d5e3b1e",
       "id": 4
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": "2345465768",
+      "feedback": "Most of the t-shirts in this price range looks good but the fabric is of inferior quality. After using this for quite a long time I must say that this is the best quality fabric available at this price range.",
+      "rating": 2,
+      "productId": "365b16c6-b112-4162-8403-b24671d476dc",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "email": "tets@gmail.com",
+      "phone": "2345678",
+      "feedback": "Most of the t-shirts in this price range looks good but the fabric is of inferior quality. After using this for quite a long time I must say that this is the best quality fabric available at this price range.",
+      "rating": 5,
+      "productId": "822caa01-065e-4f84-8831-dd31fe036e6b",
+      "id": 6
+    },
+    {
+      "name": "WDFE",
+      "email": "AD@GAIL.COM",
+      "phone": "34565",
+      "feedback": "The fabric is breathable and very comfortable for nightwear. There’s no complaint of colour fading but in long term it’ll definitely loose its sheen just like other cotton clothes do. Stitching is fine and fitting is perfect but I would advise to buy a size up.",
+      "rating": 3,
+      "productId": "fdf80882-1fe3-4d20-8dcd-1c2e4d5e3b1e",
+      "id": 7
+    },
+    {
+      "name": "Johnson ",
+      "email": "areef@gmail.com",
+      "phone": "3456789",
+      "feedback": "Although it looks plain and simple but it goes really well with a pair of jeans if you’re planning to wear it on a casual outing. After few washes, it’ll be good to wear it at home or as a nightwear.\n",
+      "rating": 1,
+      "productId": "9421afdd-4009-4415-9a13-73fbdba72d55",
+      "id": 8
+    },
+    {
+      "name": "ABU",
+      "email": "AB@GMAIL.COM",
+      "phone": "34567898",
+      "feedback": "TEST TESTTEST TESTTESTTEST TESTTEST TESTTESTTESTTESTTEST",
+      "rating": 3,
+      "productId": "e392b0e0-c7a2-4848-8c56-6956155a8e61",
+      "id": 9
     }
   ],
   "contactData": {
@@ -141,6 +186,13 @@
       "phone": "948494839",
       "message": "hello",
       "id": 2
+    },
+    {
+      "name": "Johnson ",
+      "email": "johnson@g.com",
+      "phone": "987654323",
+      "message": "hello world",
+      "id": 3
     }
   ],
   "aboutUs": {

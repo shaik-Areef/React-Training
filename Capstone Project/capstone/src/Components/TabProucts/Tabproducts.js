@@ -1,10 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './Tabproducts.css';
 
 function TabProducts() {
   return <div style={{
+    margin: "8px",
     marginLeft: "auto",
     width: "60%",
-    // height:'900px',
     marginRight: "auto"
   }}>
     <Carousel>
@@ -14,9 +15,9 @@ function TabProducts() {
           src={process.env.PUBLIC_URL + '/Assets/images/carousel/image5.jpg'}
           alt="First slide"
         />
-        <Carousel.Caption>
-          {/* <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        <Carousel.Caption >
+          <h3>Welcome to Men's Fasion world</h3>
+          <p>We have the capabilities and experience to deliver the products you need to move forward.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

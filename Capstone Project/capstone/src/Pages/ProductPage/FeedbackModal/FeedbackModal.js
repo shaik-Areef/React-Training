@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Feedback from '../Feedback/Feedback';
 
-function FeedbackModal({ productId, onClose, reviews=[] }) {
+function FeedbackModal({ productId, onClose, reviews = [] }) {
     const [errorMessage, setErrorMessage] = useState("")
     const [details, setDetails] = useState({
         name: '',
@@ -11,19 +11,16 @@ function FeedbackModal({ productId, onClose, reviews=[] }) {
         phone: '',
         feedback: '',
         rating: 0,
-
     })
 
     const validation = () => {
-
         if (!details.name || !details.email || !details.phone || !details.feedback | !details.rating) {
-            return "Please fill in the all required fields."
+            return "*Please fill the all fields."
         } else if (reviews.filter(review => review.email.toLowerCase() === details.email.toLowerCase()).length) {
-            return "User already submited review for this product, Please change above email and try again."
+            return "*User already submited review for this product, Please change above email and try again."
         } else if (details.feedback.length < 50) {
-            return "Feedback need atleast 50 charectors"
+            return "*Feedback need atleast 50 charectors"
         }
-
     }
 
     const getData = (name, value) => {
@@ -44,11 +41,7 @@ function FeedbackModal({ productId, onClose, reviews=[] }) {
         } else {
             setErrorMessage(errorMsg);
         }
-
-
     }
-
-
 
     return (
         <>
@@ -59,14 +52,12 @@ function FeedbackModal({ productId, onClose, reviews=[] }) {
                 <Modal.Body>
                     <Feedback onChangeField={getData} details={details} />
                     <div style={{ color: 'red' }}>{errorMessage}</div>
-
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={onClose}>
                         Close
                     </Button>
                     <Button variant="primary" onClick={onClickHandler}>
-
                         Submit
                     </Button>
                 </Modal.Footer>

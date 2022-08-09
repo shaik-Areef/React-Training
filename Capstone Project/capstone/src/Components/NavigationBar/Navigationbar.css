@@ -1,17 +1,16 @@
-
-.icon{
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    margin-right: 8px;
+.icon {
+   width: 20px;
+   height: 20px;
+   border-radius: 50px;
+   margin-right: 8px;
 }
- #Logo{
-    width: 200px;
-    height: 24px;
-    margin-left: 10px;
- }
- #shopName{
-    padding: 20px;
-    color: deepskyblue;
-    font-family: fantasy;
- }
+
+#Logo {
+   width: 60px;
+   height: 24px;
+   margin-left: 10px;
+}
+
+#shopName {
+   color: #f1f5f6;
+}

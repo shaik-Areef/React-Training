@@ -16,12 +16,11 @@ function AboutUs() {
             <div id='imgdiv'>
                 <img id='AboutUs' src={process.env.PUBLIC_URL + '/Assets/images/About Us.png'} alt="AboutUs" />
             </div>
-
-
-            <h2>About Us  Tagline</h2>
+            
+            <h2 className='title'>TagLine :</h2>
             {data.tagLine}
 
-            <h2>The History</h2>
+            <h2 className='title'>Company History : </h2>
             <div dangerouslySetInnerHTML={
                 { __html: data.history }
             }>

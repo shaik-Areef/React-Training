@@ -16,7 +16,7 @@ function Rating(props) {
     }
 
     return (
-        <div>
+        <div test-id='rating-container'>
             <i className='far fa-frown'
                 onMouseEnter={() => onMouseEnterHandler(1)}
                 onMouseLeave={() => onMouseLeaveHandler()}
