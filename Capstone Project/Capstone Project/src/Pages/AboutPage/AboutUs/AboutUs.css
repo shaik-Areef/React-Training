@@ -1,0 +1,15 @@
+#AboutUsMain{
+    padding: 8PX;
+}
+#imgdiv {
+    display: flex;
+
+}
+#AboutUs {
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    font-family: fangsong;
+    color: chocolate;
+}
